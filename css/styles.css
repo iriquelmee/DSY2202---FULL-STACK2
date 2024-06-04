@@ -1,0 +1,80 @@
+/* estilos body*/
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* estilos carrito */
+  #seccion-carrito {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: slideFromLeft 0.5s ease-in-out;
+  }
+  
+  #items-carrito {
+    margin-bottom: 20px;
+  }
+  
+  #precio-total {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  #boton-vaciar-carrito {
+    width: 100%;
+  }
+  
+  /* media query para pantallas más anchas */
+  @media screen and (min-width: 768px) {
+    #seccion-carrito {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Media query para pantallas más grandes */
+  @media screen and (min-width: 992px) {
+    #seccion-carrito {
+      max-width: 800px;
+    }
+  }
+  
+  /* Media query para pantallas extra grandes */
+  @media screen and (min-width: 1200px) {
+    #seccion-carrito {
+      max-width: 1000px;
+    }
+  }
+  
+  /* Animación para deslizarse desde la izquierda */
+  @keyframes slideFromLeft {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animación para deslizar tarjetas desde la derecha */
+  .card {
+    animation: slideFromRight 0.5s ease-in-out;
+  }
+  
+  /* Animación para deslizar desde la derecha */
+  @keyframes slideFromRight {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+  
+  /* Animación para deslizar el navbar desde abajo */
+  .navbar {
+    animation: slideFromRight 0.5s ease-in-out;
+  }  
